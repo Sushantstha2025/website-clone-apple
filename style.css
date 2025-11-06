@@ -1,0 +1,614 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
+    overflow-x: hidden;
+    user-select: none;
+}
+
+header{
+    display: block;
+    background-color: #1D1D1F;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    font-size: 1.1rem;
+    padding: 1em;
+    font-family: sans-serif;
+}
+
+#navigationBar{
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+/* main{
+    margin-top: 75px;
+} */
+
+#iphone17{
+    width: 100%;
+    height: 27rem;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#iphone17 h1{
+    margin-top:3rem;
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 0.1em;
+}
+
+#iphone17 h3{
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 0.9em;
+}
+
+.learnMore{
+    border: none;
+    border-radius: 50px;
+    background-color: #0071e3;
+    color: wheat;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#iphone17 .buy{
+    border: solid #0071e3 1px;
+    border-radius: 50px;
+    height: 40px;
+    width: 75px;
+    background-color: black;
+    text-align: center;
+    color: #0071e3;
+    font-size: 1.2rem;
+}
+
+#iphone17 .buy:hover{
+    background-color: #0071e3;
+    color: white;
+}
+
+#iphone17 .btns{
+    display: flex;
+    margin-top: 15px;
+    gap: 20px;
+}
+
+#iphoneNewImage{
+    height: 10em;
+    width: 40em;
+    /* position: relative;
+    left: 30%; */
+    margin-top: 30px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+#iphoneNewImage img{
+    opacity: 0.8;
+    width: 100%;
+    height: 20em;
+    object-fit: cover;
+    object-position: top;
+    transition: transform 0.5s ease;
+}
+
+#iphoneNewImage img:hover{
+    transform: translateY(-50%);
+}
+
+
+#iphoneAir{
+    background-color: #F5F5F7;
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+#iphoneAir h1{
+    font-size: 3rem;
+    margin-bottom: 0.1em;
+}
+
+#iphoneAir h3{
+    font-size: 2rem;
+    margin-bottom: 0.9em;
+}
+
+.learnMore{
+    border: none;
+    border-radius: 50px;
+    background-color: #0071e3;
+    color: wheat;
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.buy{
+    border: solid #0071e3 1px;
+    border-radius: 50px;
+    height: 40px;
+    width: 75px;
+    background-color: white;
+    text-align: center;
+    color: #0071e3;
+    font-size: 1.2rem;
+}
+
+.empty-start{
+    width: 100%;
+    height: 0.7em;
+    background-color: white;
+    margin-bottom: 2em;
+}
+.empty-end{
+    width: 100%;
+    height: 0.7em;
+    background-color: white;
+    margin-top: 2em;
+}
+
+#iphoneAir .btns{
+    display: flex;
+    margin-top: 15px;
+    gap: 20px;
+}
+
+#iphoneAir .buy:hover{
+    background-color: #0071e3;
+    color: white;
+    cursor: pointer;
+}
+
+.iphoneAirImage{
+    width: 100%;
+    height: 40em;
+    margin-top: 10px;
+}
+
+.iphoneAirImage img{
+    width: 100%;
+    height: 40em;
+}
+
+.image-text{
+    font-size: 6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+
+    /* adding background image on text */
+    background-image: url("https://www.apple.com/v/iphone-15-pro/b/images/meta/iphone-15-pro_overview__f8jz7aagka2q_og.png");
+    background-size: cover;
+    background-position: center;
+
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    letter-spacing: -1px;
+    line-height: 1;
+}
+
+
+#macbookpro {
+    color: white;
+    height: 50em;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#macbookpro h1{
+    margin-top: 30px;
+    font-size: 3.5em;
+    font-weight: 900;
+}
+
+#macbookpro h3{
+    margin-top: 10px;
+    font-size: 2em;
+    font-weight: 100;
+}
+
+#macbookpro .btns{
+    display: flex;
+    margin-top: 15px;
+    gap: 20px;
+}
+
+#macbookpro .buy{
+    background-color: black;
+}
+
+#macbookpro .buy:hover{
+    border-radius: none;
+    background-color: #0071e3;
+    color: white;
+}
+
+
+.macbookImage{
+    margin-top: 10px;
+    margin-right: 15%;
+}
+
+.macbookImage img{
+    width: 100%;
+}
+
+
+#products{
+    width: 100%;
+    height: 130em;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.product-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 1;
+    background-color: #F3F3F5;
+    margin: 5px;
+    color: black;
+}
+.product-1 h1{
+    margin-top: 1em;
+}
+.product-1 h3{
+    margin-top: 0.4em;
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+.product-1 .btns{
+    margin-top: 0.9em;
+}
+.product-1 .watchImage{
+    height: 10em;
+    margin-top: 4em;
+}
+
+.product-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 1;
+    background-color: #000000;
+    margin: 5px;
+    color: white;
+}
+.product-2 h1{
+    margin-top: 1em;
+}
+.product-2 h3{
+    margin-top: 0.4em;
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+.product-2 .btns{
+    margin-top: 0.9em;
+}
+.product-2 .ipadImage{
+    height: 10em;
+    margin-top: 4em;
+}
+
+
+.product-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 2;
+    background-color: #F3F3F5;
+    margin: 5px;
+    color: black;
+}
+
+.product-3 h1{
+    margin-top: 1em;
+}
+.product-3 h3{
+    margin-top: 0.4em;
+    font-size: 1.4rem;
+    font-weight: 100;
+}
+.product-3 .btns{
+    margin-top: 0.9em;
+}
+.product-3 .airpodsImage{
+    height: 10em;
+    margin-top: 4em;
+}
+
+
+
+.product-4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 2;
+    background-color: #DDEEF6;
+    margin:5px;
+    color: black;
+}
+.product-4 h1{
+    margin-top: 1em;
+}
+.product-4 h3{
+    margin-top: 0.4em;
+    font-size: 1.4rem;
+    font-weight: 100;
+    text-align: center;
+}
+.product-4 .btns{
+    margin-top: 0.9em;
+}
+.product-4 .macbookAirImage{
+    height: 10em;
+    margin-top: 4em;
+}
+
+
+
+.product-5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 1;
+    grid-row: 3;
+    background-color: #F3F3F5;
+    margin: 5px;
+    color: black;
+}
+.product-5 h1{
+    margin-top: 1em;
+}
+.product-5 h3{
+    margin-top: 0.4em;
+    font-size: 1.4rem;
+    font-weight: 100;
+    text-align: center;
+}
+.product-5 .estimateImage{
+    height: 10em;
+    margin-top: 4em;
+}
+.product-5 button{
+    border: none;
+    border-radius: 50px;
+    height: 34px;
+    width: 150px;
+    color: white;
+    text-align: center;
+    background-color: #0071e3;
+    font-size: 0.9rem;
+    margin-top: 0.9em;
+}
+
+
+
+.product-6{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 3;
+    background-color: #F5F5F7;
+    margin: 5px;
+    color: black;
+}
+.product-6 h1{
+    margin-top: 1em;
+}
+.product-6 h3{
+    margin-top: 0.4em;
+    font-size: 1.4rem;
+    font-weight: 100;
+    text-align: center;
+}
+.product-6 .btns{
+    margin-top: 0.9em;
+}
+.product-6 .cardImage{
+    height: 10em;
+    margin-top: 4em;
+}
+.product-6 .apply{
+    border: solid #0071e3 1px;
+    border-radius: 50px;
+    height: 40px;
+    width: 90px;
+    background-color: white;
+    text-align: center;
+    color: #0071e3;
+    font-size: 0.9rem;
+}
+
+#products .btns{
+    display: flex;
+    gap: 20px;
+}
+
+
+.product-1 img, 
+.product-2 img,
+.product-3 img, 
+.product-4 img,
+.product-5 img, 
+.product-6 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.mainSlider{
+    margin: 0;
+    background-color: #F5F5F7;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+    padding: 20px;
+}
+
+.slider{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+}
+
+.slide-track{
+    display: flex;
+    width: calc((250px+20px)*7*2);  /* image-width* number of images* number of duplicates to be formed */
+    animation: scroll 20s infinite linear;
+}
+
+.slide{
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-shrink: 0;
+    margin: 0 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slide img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+@keyframes scroll{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-1*(250px + 20px) *7));  /* each image is 250px of width, since i also gave it margin of 10 on left and right, the size of the image now become 270px i.e 20px more, so i had to add 20px to 250px of image. Also, multiplying it by -1 lets the image move to the left direction */
+    }
+}
+
+footer .longpara{
+    margin-top: 10px;
+    height: 29em;
+    width: 100%;
+    color: rgba(0, 0, 0, 0.475);
+    background-color: #F5F5F7;
+    font-size: 0.9em;
+    font-weight: 50;
+    padding: 10px 20em;
+}
+
+.last-part{
+    padding: 10px 20em;
+    width: 100%;
+    height: 50em;
+    background-color: #F5F5F7;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px 100px 100px;
+}
+
+.footer-column h4{
+    color: black;
+    font-weight: 900;
+    font-size: medium;
+    margin-bottom: 5px;
+}
+
+.footer-column ul{
+    list-style: none;
+}
+
+.footer-column li{
+    margin-bottom: 5px;
+    color: rgba(0, 0, 0, 0.607);
+    font-weight: 100;
+}
+
+#shop-and-learn{
+    grid-column: 1;
+    grid-row: 1/4;
+}
+
+#apple-wallet{
+    grid-column: 1;
+    grid-row: 4;
+}
+
+#entertainment{
+    margin-top: 20px;
+    grid-column: 2;
+    grid-row: 2/4;
+}
+
+#apple-store{
+    grid-column: 3;
+    grid-row: 1/5;
+}
+
+#for-business{
+    grid-column: 4;
+    grid-row: 1;
+}
+#for-education{
+    grid-column: 4;
+    grid-row: 2;
+}
+#for-healthcare{
+    grid-column: 4;
+    grid-row: 3;
+}
+#for-government{
+    grid-column: 4;
+    grid-row: 4;
+}
+
+#apple-values{
+    grid-column: 5;
+    grid-row: 1/3;
+}
